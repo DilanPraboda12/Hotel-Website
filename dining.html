@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining & Services - Sunrise Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+
+<body>
+
+    <!--Header Section-->
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" aria-label="Sunrise Hotel home">
+                <img src="images/logo.jpg" alt="Sunrise Hotel Logo" class="logo">
+            </a>
+            <div class="hotel-name">
+                <h1>Sunrise Hotel</h1>
+                <p class="slogan">Where every day begins beautifully</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+            <ul id="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="room.html">Rooms & Facilities</a></li>
+                <li><a href="dining.html">Dining & Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Dining Options Section-->
+
+    <main>
+        <section class="dining-options">
+            <h2>Dining Options</h2>
+
+            <!--Restaurant Card-->
+
+            <div class="dining-card">
+                <img src="images/Restaurant 2 (1).jpg" alt="Restaurant">
+                <h3>The Grand Restaurant</h3>
+                <p>Enjoy a fine dining experience with a menu crafted from the freshest local ingredients. Open for
+                    breakfast, lunch, and dinner.</p>
+            </div>
+
+            <!--Cafe Card-->
+
+            <div class="dining-card">
+                <img src="images/Loby Cafe (1).jpg" alt="Cafe">
+                <h3>The Lobby Cafe</h3>
+                <p>A casual spot to grab a coffee, a pastry, or a light snack. Perfect for a quick break or a morning
+                    meeting.</p>
+            </div>
+
+            <!--Bar Card-->
+
+            <div class="dining-card">
+                <img src="images/Sunset Bar (1).jpg" alt="Bar">
+                <h3>Sunset Bar</h3>
+                <p>Sip on a handcrafted cocktail while enjoying the stunning sunset view from our rooftop bar.</p>
+            </div>
+        </section>
+
+        <!--Menu Highlights Section-->
+
+        <section class="menu-highlights">
+            <h2>Menu Highlights</h2>
+
+            <!--Grilled Steak Card-->
+
+            <div class="menu-item">
+                <img src="images/Grilled Steak (1).jpg" alt="Grilled Steak">
+                <div class="item-details">
+                    <h3>Grilled Steak</h3>
+                    <p>A juicy cut of sirloin, grilled to perfection, served with roasted vegetables and a peppercorn
+                        sauce.</p>
+                    <p class="price">LKR 4900</p>
+                </div>
+            </div>
+
+            <!--Seafood Pasta Card-->
+
+            <div class="menu-item">
+                <img src="images/Seafood Pasta (1).jpg" alt="Seafood Pasta">
+                <div class="item-details">
+                    <h3>Seafood Pasta</h3>
+                    <p>Fresh pasta with a medley of shrimp, mussels, and calamari in a light tomato sauce.</p>
+                    <p class="price">LKR 3800</p>
+                </div>
+            </div>
+
+            <!--Lava Cake Card-->
+
+            <div class="menu-item">
+                <img src="images/Lava Cake (1).jpg" alt="Chocolate Lava Cake">
+                <div class="item-details">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>A rich, decadent chocolate cake with a molten center, served with a strawberries and scoop of
+                        vanilla bean ice
+                        cream.</p>
+                    <p class="price">LKR 1500</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Other Services Section-->
+
+        <section class="other-services">
+            <h2>Other Services</h2>
+
+            <!--Airport Shuttle Card-->
+
+            <div class="service-card">
+                <img src="images/Shuttle Service.jpg" alt="Airport Shuttle">
+                <h3>Airport Shuttle</h3>
+                <p>We provide a convenient and reliable shuttle service to and from the airport. Please book in advance.
+                </p>
+            </div>
+
+            <!--Room Service Card-->
+
+            <div class="service-card">
+                <img src="images/Room Service.jpg" alt="Room Service">
+                <h3>Room Service</h3>
+                <p>Enjoy a meal in the comfort of your room with our 24/7 room service. A wide range of options are
+                    available.</p>
+            </div>
+
+            <!--Event Hosting Card-->
+
+            <div class="service-card">
+                <img src="images/Event Hosting 1 (1).jpg" alt="Event Hosting">
+                <h3>Event Hosting</h3>
+                <p>Our hotel offers various venues for events, from business conferences to weddings. Contact us for
+                    details.</p>
+            </div>
+        </section>
+    </main>
+
+     <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show");
+        });
+    </script>
+
+    <!--Footer Section-->
+
+    <footer>
+        <div class="footer-content">
+
+            <!--Contact Us-->
+
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> 123 Hotel Street, City, Country</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Email:</strong> info@sunrisehotel.com</p>
+            </div>
+
+            <!--Social Medias-->
+
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <!--Quick Contact-->
+
+            <div class="contact-form-footer">
+                <h4>Quick Contact</h4>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!--Newsletter-->
+
+            <div class="newsletter-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

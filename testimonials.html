@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Sunrise Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+
+<body>
+
+<!--Header Section-->
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" aria-label="Sunrise Hotel home">
+                <img src="images/logo.jpg" alt="Sunrise Hotel Logo" class="logo">
+            </a>
+            <div class="hotel-name">
+                <h1>Sunrise Hotel</h1>
+                <p class="slogan">Where every day begins beautifully</p>
+            </div>
+        </div>
+        <nav class="navbar">
+
+             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+
+            <ul  id="nav-menu">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="room.html">Rooms & Facilities</a></li>
+                <li><a href="dining.html">Dining & Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Testimonials Section-->
+
+    <main>
+        <section class="testimonials">
+            <h2>What Our Guests Say</h2>
+
+            <!--First Card-->
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="review-text">"Our stay at Sunrise Hotel was absolutely fantastic! The staff were
+                        incredibly friendly and the room was spotless. We'll definitely be back!"</p>
+                    <p class="customer-name">- Christina Doe</p>
+                    <p class="testimonial-date">August 15, 2025</p>
+                    <video controls>
+                        <source src="videos/Testimonial Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <audio controls>
+                        <source src="audios/Testimonial Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="stay-enjoyment">
+                        <input type="checkbox" id="enjoy-stay1" name="enjoy-stay" checked>
+                        <label for="enjoy-stay1">Did you enjoy your stay with us?</label>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Card-->
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p class="review-text">"The location is perfect, and the amenities are top-notch. The restaurant had
+                        some of the best food we've ever had. Highly recommend!"</p>
+                    <p class="customer-name">- John Smith</p>
+                    <p class="testimonial-date">July 22, 2025</p>
+                    <video controls>
+                        <source src="videos/Testimonial Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <audio controls>
+                        <source src="audios/Testimonial Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="stay-enjoyment">
+                        <input type="checkbox" id="enjoy-stay2" name="enjoy-stay" checked>
+                        <label for="enjoy-stay2">Did you enjoy your stay with us?</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show");
+        });
+    </script>
+
+<!--Footer Section-->
+
+    <footer>
+        <div class="footer-content">
+
+            <!--Contact Us-->
+
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> 123 Hotel Street, City, Country</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Email:</strong> info@sunrisehotel.com</p>
+            </div>
+
+            <!--Social Medias-->
+
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+            <!--Quick Contact-->
+
+            <div class="contact-form-footer">
+                <h4>Quick Contact</h4>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!--Newsletter-->
+            
+            <div class="newsletter-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+:root {
+    --bg: #fff;
+    --text: #111;
+    --muted: #666;
+    --brand: #f59f00;
+    --brand-2: #ffec99;
+    --border: #e9ecef;
+}
+
+
+
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* header section */
+
+header {
+    background-color: #fff;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: .8rem;
+    margin: 0;
+    margin-top: 4px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+}
+
+/*navigation bar*/
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e67e22;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/*main content*/
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/*hero section*/
+
+.hero-text {
+    position: absolute;
+    inset: auto 0 10% 0;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.hero-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.5rem, 3vw, 2.6rem);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-text-stroke: 1px rgb(11, 10, 10);
+}
+
+.f1 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 380px;
+
+
+}
+
+.hero-banner {
+    position: relative;
+    background-size: cover;
+
+}
+
+.hero-banner h1 {
+    font-size: 4rem;
+    margin-bottom: 80px;
+    color: black;
+    text-shadow: #333;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.hero-banner img {
+    width: 100%;
+    height: clamp(280px, 40vw, 520px);
+    object-fit: cover;
+    opacity: 90%;
+    background-size: cover;
+
+
+
+}
+
+.hero-banner.hero-text {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    position: absolute;
+    inset: auto 0 10% 0;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/*other sections*/
+
+.featured-rooms,
+.special-offers,
+.room-types,
+.facilities,
+.dining-options,
+.menu-highlights,
+.other-services,
+.testimonials,
+.contact-details,
+.inquiry-form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+/*section headings*/
+
+.dining-options h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 340px;
+
+}
+
+.menu-highlights h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 120px;
+
+
+}
+
+.other-services h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 340px;
+
+}
+
+.room-types h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 250px;
+
+}
+
+.facilities h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 310px;
+
+}
+
+/*cards*/
+
+.room-card,
+.offer-card,
+.room-details-card,
+.facility-card,
+.dining-card,
+.menu-item,
+.service-card,
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex-basis: 45%;
+    box-sizing: border-box;
+}
+
+.rate {
+    margin-bottom: 2rem;
+}
+
+
+
+.room-card img,
+.room-details-card img,
+.facility-card img,
+.dining-card img,
+.menu-item img,
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.room-details-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.room-details-card img {
+    width: 50%;
+    height: auto;
+}
+
+.special-offers h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 55px;
+
+}
+
+
+/*book now btn*/
+
+
+.book-now-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.book-now-btn:hover {
+    background-color: #d35400;
+}
+
+/*menu items*/
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-item img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/*testimonials*/
+
+.testimonial-card {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.testimonial-card video,
+.testimonial-card audio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.testimonials h2 {
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: 430px;
+}
+
+/*inquiry form*/
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inquiry-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.inquiry-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 500px;
+}
+
+/*submit btn*/
+
+.submit-btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d35400;
+}
+
+/*footer section*/
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info,
+.social-media,
+.contact-form-footer,
+.newsletter-section {
+    flex-basis: 22%;
+    min-width: 200px;
+}
+
+footer h4 {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin-bottom: 5px;
+}
+
+.social-media a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e67e22;
+}
+
+.contact-form-footer input,
+.contact-form-footer textarea,
+.newsletter-section input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form-footer button,
+.newsletter-section button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form-footer button:hover,
+.newsletter-section button:hover {
+    background-color: #d35400;
+}
+
+
+/* MOBILE RESPONSIVE STYLES */
+
+@media (max-width: 992px) {
+
+    .room-card,
+    .offer-card,
+    .room-details-card,
+    .facility-card,
+    .dining-card,
+    .menu-item,
+    .service-card,
+    .testimonial-card {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    .room-details-card {
+        flex-direction: column;
+
+    }
+
+    .room-details-card img {
+        width: 100%;
+    }
+
+    .inquiry-form input,
+    .inquiry-form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Header & Navbar */
+    header {
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        border-radius: 6px;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar li {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #333;
+    }
+
+    /* Hero text scaling */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1rem;
+    }
+
+    /* Footer layout */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .social-media,
+    .contact-form-footer,
+    .newsletter-section {
+        flex-basis: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Make text more compact */
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .slogan {
+        font-size: 0.7rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 15px;
+
+    }
+
+    .room-card img,
+    .facility-card img,
+    .dining-card img,
+    .menu-item img {
+        height: auto;
+    }
+}

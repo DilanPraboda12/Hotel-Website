@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms & Facilities - Sunrise Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+
+<body>
+
+<!--Header Section-->
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html" aria-label="Sunrise Hotel home">
+                <img src="images/logo.jpg" alt="Sunrise Hotel Logo" class="logo">
+            </a>
+            <div class="hotel-name">
+                <h1>Sunrise Hotel</h1>
+                <p class="slogan">Where every day begins beautifully</p>
+            </div>
+
+        </div>
+
+        <nav class="navbar">
+
+             <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+            <ul id="nav-menu">
+                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="room.html">Rooms & Facilities</a></li>
+                <li><a href="dining.html">Dining & Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!--Our Rooms Section-->
+
+    <main>
+
+        <!--Standard Room Card-->
+
+        <section class="room-types">
+            <h2>Our Rooms</h2>
+            <div class="room-details-card">
+                <img src="images/Standard Room.jpg" alt="Standard Room">
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p>The Standard Room is a cozy and comfortable option for solo travelers or couples. It features a
+                        queen-size bed, a work desk, and a private bathroom. An excellent choice for a short and sweet
+                        stay</p>
+                    <p class="rate">Nightly Rate: LKR 8000 Upwards</p>
+                    <a href="contact.html" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+
+            <!--Duluxe Room Card-->
+
+            <div class="room-details-card">
+                <img src="images/Dulux Room.jpg" alt="Duluxe Room">
+                <div class="room-info">
+                    <h3>Duluxe Room </h3>
+                    <p>Experience luxury in our spacious Deluxe Room, featuring a comfortable king-size bed, a modern
+                        en-suite bathroom, and a private balcony with stunning city views. Enjoy amenities such as a
+                        flat-screen TV, minibar, and complimentary Wi-Fi.</p>
+                    <p class="rate">Nightly Rate: LKR 18,000 Upwards</p>
+                    <a href="contact.html" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+
+            <!--Family Room Card-->
+
+            <div class="room-details-card">
+                <img src="images/Family Room.jpg" alt="Family Room">
+                <div class="room-info">
+                    <h3>Family Room</h3>
+                    <p>Designed with families in mind, our Family Room provides ample space and comfort. It features a
+                        king-size bed and two single beds, ensuring everyone has a restful night's sleep. Comes with a
+                        mini-fridge and a seating area.</p>
+                    <p class="rate">Nightly Rate: LKR 30,000 Upwards</p>
+                    <a href="contact.html" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+
+            <!--Suite Room Card-->
+
+            <div class="room-details-card">
+                <img src="images/Suite Room (1).jpg" alt="Suite Room">
+                <div class="room-info">
+                    <h3>Suite Room</h3>
+                    <p>Our Suite Room is designed for guests who enjoy extra space and elegance. It features a separate
+                        living area, a spacious bedroom with a king-size bed, and a modern bathroom. With stylish décor,
+                        premium amenities, and stunning views, the Suite Room offers the perfect balance of luxury and
+                        comfort for families or travelers seeking a memorable stay.</p>
+                    <p class="rate">Nightly Rate: LKR 30,000 Upwards</p>
+                    <a href="contact.html" class="book-now-btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+<!--Facilitites Section-->
+
+            <!--Swimming Pool Card-->
+
+        <section class="facilities">
+            <h2>Hotel Facilities</h2>
+            <div class="facility-card">
+                <img src="images/Swimming Pool (1).jpg" alt="Swimming Pool">
+                <h3>Swimming Pool</h3>
+                <p>Relax and unwind at our rooftop swimming pool with a panoramic view of the city.</p>
+            </div>
+
+           <!--Gym Card-->
+
+            <div class="facility-card">
+                <img src="images/Gym (1).jpg" alt="Gym">
+                <h3>Gym</h3>
+                <p>Stay fit with our state-of-the-art gym, equipped with modern cardio and weight machines.</p>
+            </div>
+
+            <!--Restaurant Card-->
+
+            <div class="facility-card">
+                <img src="images/Restaurant (1).jpg" alt="Restaurant">
+                <h3>Restaurant</h3>
+                <p>Our on-site restaurant offers a diverse menu of local and international cuisines.</p>
+            </div>
+
+            <!--Spa Card-->
+
+            <div class="facility-card">
+                <img src="images/Spa (1).jpg" alt="Spa">
+                <h3>Spa</h3>
+                <p>Indulge in a rejuvenating massage or a variety of treatments at our tranquil spa.</p>
+            </div>
+
+            <div class="facility-card">
+                <img src="images/Conference Hall (1).jpg" alt="Conference Hall">
+                <h3>Conference Hall</h3>
+                <p>Our conference hall offers a modern space with advanced facilities, perfect for meetings, seminars, and corporate events.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.getElementById("nav-menu").classList.toggle("show");
+        });
+    </script>
+
+<!--Footer Section-->
+
+    <footer>
+
+        <!--Contact Us-->
+
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong> 123 Hotel Street, City, Country</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Email:</strong> info@sunrisehotel.com</p>
+            </div>
+
+        <!--Social Medias-->
+
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+
+         <!--Quick Contact-->
+
+            <div class="contact-form-footer">
+                <h4>Quick Contact</h4>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+         <!--Newsletter-->
+
+            <div class="newsletter-section">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="newsletter-email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
